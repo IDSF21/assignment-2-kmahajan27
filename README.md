@@ -1,4 +1,7 @@
-# Assignment Objectives and Goals
+# Interactive Data Science HW2
+
+
+# Assignment Goals
 
 1. Inspecting trends of travellers from different countries during different seasons, years and times of the year.
 2. Comparing and analyzing the length of stay at any hotel based on whether the travellers have children or not.
@@ -45,7 +48,7 @@ From this dataset, we find out that maximum cancellations are done if the time f
 # Interactions and design decisions
 
 1. The map contains the number of travellers from each country. We can get the country name and the number of travellers by hovering over the country location. Also the density of the color indicates the percentage of travellers from the country compared to the total number of travellers overall. This design gives a visual representation of the relative number of travellers from the different countries without knowing the exact numerical values. Also, simply by choosing different years, and months, we can form a visual image about the relative number of travellers from various countries. Choosing a world map helps in visualizing the geographical data better compared to other forms of visualization.
-2. Length of stay is an important data analysis feature for hotel stays. We plot the top-10 values of the stay only since the data is very sparse for larger values of stay. Also, we can change the number of adults and children travelling with the help of the slider. We selected the range for the number of adults and children keeping in mind the values for which sufficient data was available. Also, choosing the barplot helps in relative comparison between the different night stay durations
+2. Length of stay is an important data analysis feature for hotel stays. We plot the top-10 values of the stay only since the data is very sparse for larger values of stay. Also, we can change the number of adults and children travelling with the help of the slider. We selected the range for the number of adults and children keeping in mind the values for which sufficient data was available. Also, choosing the barplot helps in relative comparison between the different night stay durations.
 3. We have used a stacked histogram to find the trend between number of cancellations and type of customer/hotel 
 Why? This design decision was made because a stacked histogram is the best way to represent the number of cancellations made in particular range of days, and we can use stacks to show the influence of another variable over it - that is, how much part of the bar belongs to a particular hotel or a particular customer type. We have also added a zoom in-out feature to change the granularity or the range of the number of days.
 
@@ -62,3 +65,4 @@ Once the questions were determined, we tried to see what features and feature co
 2. hotel\_bookings\_mod1.csv : Preprocessed data
 3. country\_codes.csv : Used for obtaining the country IDs for plotting
 4. streamlit\_app.py : Streamlit visualization code
+5. Report.pdf : Analysis of the various components of the assignment
