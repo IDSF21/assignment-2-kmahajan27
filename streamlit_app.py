@@ -363,7 +363,7 @@ def format_func(option):
 option = st.selectbox('Stack by?', options=list(CHOICES.keys()), format_func=format_func)
 # st.subheader('(zoom in/out to change the range of the bins)')
 brush = alt.selection_interval(bind='scales', encodings=['x'])
-st.caption('(zoom in/out to change the range of the bins)')
+st.text('(zoom in/out to change the granularity of the graph or the width of the bins)')
 chart = alt.Chart(df_cancelled).mark_bar().encode(
     y=alt.Y('count()', title="Frequency in lead time bins - cancelled reservations only"),
     x=alt.X('lead_time', bin=alt.Bin(maxbins=30, extent=brush), title="Lead time (bins)"),
